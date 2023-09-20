@@ -469,38 +469,38 @@ Unary Operators 	!, -, +
 |    trunc    |    trunc    |    trunc    |
 +-------------+-------------+-------------+
 
-
-+----------------------+----------------------+-----------------------+
-|       Function       |        GLSL          |        HLSL           |
-+======================+======================+=======================+
-| load                 | texelFetch, imageLoad| TextureND::Load       |
-+----------------------+----------------------+-----------------------+
-| load_offset          | texelFetchOffset     | TextureND::Load       |
-+----------------------+----------------------+-----------------------+
-| gather               | textureGather        | TextureND::Gather     |
-+----------------------+----------------------+-----------------------+
-| gather_offset        | textureGatherOffset  | TextureND::Gather     |
-+----------------------+----------------------+-----------------------+
-| sample               | texture              | TextureND::Sample     |
-+----------------------+----------------------+-----------------------+
-| sample_bias          | texture              | TextureND::SampleBias |
-+----------------------+----------------------+-----------------------+
-| sample_bias_offset   | textureOffset        | TextureND::SampleBias |
-+----------------------+----------------------+-----------------------+
++----------------------+-----------------------------+-----------------------+
+| Function             | GLSL                        | HLSL                  |
++======================+=============================+=======================+
+| load                 | texelFetch, imageLoad       | TextureND::Load       |
++----------------------+-----------------------------+-----------------------+
+| load_offset          | texelFetchOffset            | TextureND::Load       |
++----------------------+-----------------------------+-----------------------+
+| gather               | textureGather               | TextureND::Gather     |
++----------------------+-----------------------------+-----------------------+
+| gather_offset        | textureGatherOffset         | TextureND::Gather     |
++----------------------+-----------------------------+-----------------------+
+| sample               | texture                     | TextureND::Sample     |
++----------------------+-----------------------------+-----------------------+
+| sample_bias          | texture                     | TextureND::SampleBias |
++----------------------+-----------------------------+-----------------------+
+| sample_bias_offset   | textureOffset               | TextureND::SampleBias |
++----------------------+-----------------------------+-----------------------+
 | sample_cmp           | texture using samplerShadow | TextureND::SampleCmp  |
-+----------------------+----------------------+-----------------------+
-| sample_grad          | textureGrad          | TextureND::SampleGrad |
-+----------------------+----------------------+-----------------------+
-| sample_grad_offset   | textureGradOffset    | TextureND::SampleGrad |
-+----------------------+----------------------+-----------------------+
-| sample_level         | textureLod           | TextureND::SampleLevel|
-+----------------------+----------------------+-----------------------+
-| sample_level_offset  | textureLodOffset     | TextureND::SampleLevel|
-+----------------------+----------------------+-----------------------+
-| sample_offset        | textureOffset        | TextureND::Sample     |
-+----------------------+----------------------+-----------------------+
-| store                | imageStore           | TextureND::Operator[] |
-+----------------------+----------------------+-----------------------+
++----------------------+-----------------------------+-----------------------+
+| sample_grad          | textureGrad                 | TextureND::SampleGrad |
++----------------------+-----------------------------+-----------------------+
+| sample_grad_offset   | textureGradOffset           | TextureND::SampleGrad |
++----------------------+-----------------------------+-----------------------+
+| sample_level         | textureLod                  | TextureND::SampleLevel|
++----------------------+-----------------------------+-----------------------+
+| sample_level_offset  | textureLodOffset            | TextureND::SampleLevel|
++----------------------+-----------------------------+-----------------------+
+| sample_offset        | textureOffset               | TextureND::Sample     |
++----------------------+-----------------------------+-----------------------+
+| store                | imageStore                  | TextureND::Operator[] |
++----------------------+-----------------------------+-----------------------+
+
 
 https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 
