@@ -504,7 +504,7 @@ Unary Operators 	!, -, +
 
 https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 
-.. code-block:: c++
+.. code-block:: cpp
 	struct MyStruct
 	{
 		[[offset = 0]] vec4 a;
