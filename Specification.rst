@@ -502,7 +502,7 @@ https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 
 1.5 Syntax
 ------------------
-.. code-block:: cpp
+.. code-block:: text
 	struct MyStruct
 	{
 		[[offset = 0]] vec4 a;
