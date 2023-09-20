@@ -194,11 +194,13 @@ clamp((a), 0.0, 1.0)
 #define select(a, b, c) \
 ((a) ? (b) : (c))
 
-INSTANTIATE_FLOAT_TEMPLATES(
-void sincos(float x, out s, out c)
-{
-	s = sin(x);
-	c = cos(x);
-})
+#define SINCOS_TEMPLATE(T)		\
+void sincos(T x, out T s, out T c)	\
+{					\
+	s = sin(x);			\
+	c = cos(x);			\
+}
+
+INSTANTIATE_FLOAT_TEMPLATES(SINCOS_TEMPLATE)
 
 layout (row_major) uniform;
