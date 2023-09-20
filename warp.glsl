@@ -1,44 +1,45 @@
-#define INSTANTIATE_TEMPLATES(TEMPLATE) \
-TEMPLATE(float)				\
-TEMPLATE(vec2)				\
-TEMPLATE(vec3)				\
-TEMPLATE(vec4)				\
-TEMPLATE(int)				\
-TEMPLATE(ivec2)				\
-TEMPLATE(ivec3)				\
-TEMPLATE(ivec4)				\
-TEMPLATE(uint)				\
-TEMPLATE(uvec2)				\
-TEMPLATE(uvec3)				\
-TEMPLATE(uvec4)				
-
 #define INSTANTIATE_FLOAT_TEMPLATES(TEMPLATE) 	\
 TEMPLATE(float)					\
 TEMPLATE(vec2)					\
 TEMPLATE(vec3)					\
-TEMPLATE(vec4)					
+TEMPLATE(vec4)					\
+TEMPLATE(mat2)					\
+TEMPLATE(mat3)					\
+TEMPLATE(mat4)						
 
 #define INSTANTIATE_INT_TEMPLATES(TEMPLATE) 	\
 TEMPLATE(int)					\
 TEMPLATE(ivec2)					\
 TEMPLATE(ivec3)					\
 TEMPLATE(ivec4)					\
+TEMPLATE(imat2)					\
+TEMPLATE(imat3)					\
+TEMPLATE(imat4)					\
 TEMPLATE(uint)					\
 TEMPLATE(uvec2)					\
 TEMPLATE(uvec3)					\
-TEMPLATE(uvec4)				
+TEMPLATE(uvec4)					\
+TEMPLATE(umat2)					\
+TEMPLATE(umat3)					\
+TEMPLATE(umat4)					\
 
 #define INSTANTIATE_SINT_TEMPLATES(TEMPLATE) 	\
 TEMPLATE(int)					\
 TEMPLATE(ivec2)					\
 TEMPLATE(ivec3)					\
-TEMPLATE(ivec4)					
+TEMPLATE(ivec4)					\
+TEMPLATE(imat2)					\
+TEMPLATE(imat3)					\
+TEMPLATE(imat4)					
 
 #define INSTANTIATE_UINT_TEMPLATES(TEMPLATE)	\
 TEMPLATE(uint)					\
 TEMPLATE(uvec2)					\
 TEMPLATE(uvec3)					\
-TEMPLATE(uvec4)				
+TEMPLATE(uvec4)					\
+TEMPLATE(umat2)					\
+TEMPLATE(umat3)					\
+TEMPLATE(umat4)					\
 
 // for GLSL
 
@@ -193,10 +194,11 @@ clamp((a), 0.0, 1.0)
 #define select(a, b, c) \
 ((a) ? (b) : (c))
 
+INSTANTIATE_FLOAT_TEMPLATES(
 void sincos(float x, out s, out c)
 {
 	s = sin(x);
 	c = cos(x);
-}
+})
 
 layout (row_major) uniform;
