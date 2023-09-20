@@ -486,7 +486,7 @@ Unary Operators 	!, -, +
 +----------------------+-----------------------------+-----------------------+
 | sample_bias_offset   | textureOffset               | TextureND::SampleBias |
 +----------------------+-----------------------------+-----------------------+
-| sample_cmp           | texture using samplerShadow | TextureND::SampleCmp  |
+| sample_cmp           | texture (samplerShadow)     | TextureND::SampleCmp  |
 +----------------------+-----------------------------+-----------------------+
 | sample_grad          | textureGrad                 | TextureND::SampleGrad |
 +----------------------+-----------------------------+-----------------------+
