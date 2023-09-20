@@ -504,65 +504,11 @@ Unary Operators 	!, -, +
 
 https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 
-AllMemoryBarrier 	Blocks execution of all threads in a group until all memory accesses have been completed. 	5
-AllMemoryBarrierWithGroupSync 	Blocks execution of all threads in a group until all memory accesses have been completed and all threads in the group have reached this call. 	5
-CheckAccessFullyMapped 	Determines whether all values from a Sample or Load operation accessed mapped tiles in a tiled resource. 	5
-DeviceMemoryBarrier 	Blocks execution of all threads in a group until all device memory accesses have been completed. 	5
-DeviceMemoryBarrierWithGroupSync 	Blocks execution of all threads in a group until all device memory accesses have been completed and all threads in the group have reached this call. 	5
-
-
-dst 	Calculates a distance vector. 	5
-EvaluateAttributeCentroid 	Evaluates at the pixel centroid. 	5
-EvaluateAttributeAtSample 	Evaluates at the indexed sample location. 	5
-EvaluateAttributeSnapped 	Evaluates at the pixel centroid with an offset. 	5
-
-f16tof32 	Converts the float16 stored in the low-half of the uint to a float. 	5
-f32tof16 	Converts an input into a float16 type. 	5
-
-firstbithigh 	Gets the location of the first set bit starting from the highest order bit and working downward, per component. 	5
-firstbitlow 	Returns the location of the first set bit starting from the lowest order bit and working upward, per component. 	5
-reversebits 	Reverses the order of the bits, per component. 	5
-
-GetRenderTargetSampleCount 	Returns the number of render-target samples. 	4
-GetRenderTargetSamplePosition 	Returns a sample position (x,y) for a given sample index. 	4
-GroupMemoryBarrier 	Blocks execution of all threads in a group until all group shared accesses have been completed. 	5
-GroupMemoryBarrierWithGroupSync 	Blocks execution of all threads in a group until all group shared accesses have been completed and all threads in the group have reached this call. 	5
-
-InterlockedAdd 	Performs a guaranteed atomic add of value to the dest resource variable. 	5
-InterlockedAnd 	Performs a guaranteed atomic and. 	5
-InterlockedCompareExchange 	Atomically compares the input to the comparison value and exchanges the result. 	5
-InterlockedCompareStore 	Atomically compares the input to the comparison value. 	5
-InterlockedExchange 	Assigns value to dest and returns the original value. 	5
-InterlockedMax 	Performs a guaranteed atomic max. 	5
-InterlockedMin 	Performs a guaranteed atomic min. 	5
-InterlockedOr 	Performs a guaranteed atomic or. 	5
-InterlockedXor 	Performs a guaranteed atomic xor. 	5
-
-lit 	Returns a lighting vector (ambient, diffuse, specular, 1) 	1¹
-msad4 	Compares a 4-byte reference value and an 8-byte source value and accumulates a vector of 4 sums. 	5
-
-Process2DQuadTessFactorsAvg 	Generates the corrected tessellation factors for a quad patch. 	5
-Process2DQuadTessFactorsMax 	Generates the corrected tessellation factors for a quad patch. 	5
-Process2DQuadTessFactorsMin 	Generates the corrected tessellation factors for a quad patch. 	5
-ProcessIsolineTessFactors 	Generates the rounded tessellation factors for an isoline. 	5
-ProcessQuadTessFactorsAvg 	Generates the corrected tessellation factors for a quad patch. 	5
-ProcessQuadTessFactorsMax 	Generates the corrected tessellation factors for a quad patch. 	5
-ProcessQuadTessFactorsMin 	Generates the corrected tessellation factors for a quad patch. 	5
-ProcessTriTessFactorsAvg 	Generates the corrected tessellation factors for a tri patch. 	5
-ProcessTriTessFactorsMax 	Generates the corrected tessellation factors for a tri patch. 	5
-ProcessTriTessFactorsMin 	Generates the corrected tessellation factors for a tri patch. 	5
-
 ```
 struct MyStruct
 {
-	offset(16) vec4 a;
-	offset(32) vec4 b;
-
 	[[offset = 16]] vec4 a;
 	[[offset = 32]] vec4 b;
-
-	[[16]] vec4 a;
-	[[32]] vec4 b;
 };
 
 [[std430]] StorageBuffer<float> scalarBuffer : argument(0);
