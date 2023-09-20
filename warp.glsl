@@ -249,4 +249,6 @@ void sincos(T x, out T s, out T c)	\
 
 INSTANTIATE_FLOAT_TEMPLATES(SINCOS_TEMPLATE)
 
+#extension GL_EXT_debug_printf : require
+
 layout (row_major) uniform;
