@@ -93,6 +93,12 @@ TEMPLATE(umat4)					\
 #define int4x3 imat3x4
 #define int4x4 imat4x4
 
+// Requires GL_ARB_gpu_shader_int64
+#define long1 int64_t
+#define long2 i64vec2
+#define long3 i64vec3
+#define long4 i64vec4
+
 #define ushort1 uint
 #define ushort2 uvec2
 #define ushort3 uvec3
@@ -120,6 +126,12 @@ TEMPLATE(umat4)					\
 #define uint4x2 umat2x4
 #define uint4x3 umat3x4
 #define uint4x4 umat4x4
+
+// Requires GL_ARB_gpu_shader_int64
+#define ulong1 uint64_t
+#define ulong2 u64vec2
+#define ulong3 u64vec3
+#define ulong4 u64vec4
 
 #define half1 float
 #define half2 float2
@@ -215,6 +227,9 @@ mix(a, b, c)
 
 #define mul(a, b) \
 ((a) * (b)) // ???
+
+#define printf(a) \
+debugPrintfEXT(a)
 
 #define rcp(a) \
 (1.0 / (a))
