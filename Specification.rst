@@ -505,20 +505,20 @@ Unary Operators 	!, -, +
 https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 
 .. code-block::
-struct MyStruct
-{
-	[[offset = 16]] vec4 a;
-	[[offset = 32]] vec4 b;
-};
+	struct MyStruct
+	{
+		[[offset = 0]] vec4 a;
+		[[offset = 16]] vec4 b;
+	};
 
-[[std430]] StorageBuffer<float> scalarBuffer : argument(0);
+	[[std430]] StorageBuffer<MyStruct> myBuffer : argument(0);
 
-[[vertex]]
+	[[vertex]]
 
-void main()
-{
-	StorageBuffer<float> buffer : material.texture;
-}
+	void main()
+	{
+		StorageBuffer<float> myAnotherBuffer : material.parameters;
+	}
 
 https://github.com/KhronosGroup/GLSL/blob/master/extensions/khr/GL_KHR_vulkan_glsl.txt
 https://learn.microsoft.com/en-us/windows/uwp/gaming/glsl-to-hlsl-reference
