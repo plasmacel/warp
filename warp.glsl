@@ -249,6 +249,14 @@ void sincos(T x, out T s, out T c)	\
 
 INSTANTIATE_FLOAT_TEMPLATES(SINCOS_TEMPLATE)
 
-#extension GL_EXT_debug_printf : require
+#extension GL_EXT_debug_printf                             : require
+#extension GL_EXT_shader_explicit_arithmetic_types         : require
+#extension GL_EXT_shader_explicit_arithmetic_types_int8    : require
+#extension GL_EXT_shader_explicit_arithmetic_types_int16   : require
+#extension GL_EXT_shader_explicit_arithmetic_types_int32   : require
+#extension GL_EXT_shader_explicit_arithmetic_types_int64   : require
+#extension GL_EXT_shader_explicit_arithmetic_types_float16 : require
+#extension GL_EXT_shader_explicit_arithmetic_types_float32 : require
+#extension GL_EXT_shader_explicit_arithmetic_types_float64 : require
 
 layout (row_major) uniform;
