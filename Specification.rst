@@ -503,19 +503,19 @@ https://anteru.net/blog/2016/mapping-between-HLSL-and-GLSL/
 1.5 Syntax
 ------------------
 .. code-block:: hlsl
-   struct MyStruct
-   {
-	   [[offset = 0]] vec4 a;
-	   [[offset = 16]] vec4 b;
-   };
+  struct MyStruct
+  {
+	  [[offset = 0]] vec4 a;
+	  [[offset = 16]] vec4 b;
+  };
 
-   [[std430]] StorageBuffer<MyStruct> myBuffer : argument(0);
+  [[std430]] StorageBuffer<MyStruct> myBuffer : argument(0);
 
-   [[vertex]]
-   void main()
-   {
-	   StorageBuffer<float> myAnotherBuffer : material.parameters;
-   }
+  [[vertex]]
+  void main()
+  {
+	  StorageBuffer<float> myAnotherBuffer : material.parameters;
+  }
 
 https://github.com/KhronosGroup/GLSL/blob/master/extensions/khr/GL_KHR_vulkan_glsl.txt
 https://learn.microsoft.com/en-us/windows/uwp/gaming/glsl-to-hlsl-reference
