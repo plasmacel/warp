@@ -120,180 +120,180 @@ Unary Operators 	!, -, +
 ------------------
 
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WARP Intrinsic Variable   | HLSL Semantic             | SigPoint    | SPIR-V ``BuiltIn``                     | SPIR-V Execution Mode |   SPIR-V Capability         |
+| WARP Intrinsic Variable   | HLSL Semantic             | SigPoint    | GLSL Built-In Variable                 | SPIR-V Execution Mode |   SPIR-V Capability         |
 +===========================+=============+=============+=============+========================================+=======================+=============================+
-|                           |                           | VSOut       | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | VSOut       | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPIn      | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | HSCPIn      | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPOut     | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | HSCPOut     | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSCPIn      | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | DSCPIn      | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_Position               | SV_Position               | DSOut       | ``Position``                           | N/A                   | ``Shader``                  |
+| WA_Position               | SV_Position               | DSOut       | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSVIn       | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | GSVIn       | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | GSOut       | ``gl_Position``                        | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``FragCoord``                          | N/A                   | ``Shader``                  |
+|                           |                           | PSIn        | ``gl_FragCoord``                       | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | MSOut       | ``Position``                           | N/A                   | ``Shader``                  |
+|                           |                           | MSOut       | ``gl_Position``                        | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | VSOut       | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | VSOut       | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPIn      | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | HSCPIn      | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPOut     | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | HSCPOut     | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSCPIn      | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | DSCPIn      | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_ClipDistance           | SV_ClipDistance           | DSOut       | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+| WA_ClipDistance           | SV_ClipDistance           | DSOut       | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSVIn       | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | GSVIn       | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | GSOut       | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | PSIn        | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | MSOut       | ``ClipDistance``                       | N/A                   | ``ClipDistance``            |
+|                           |                           | MSOut       | ``gl_ClipDistance``                    | N/A                   | ``ClipDistance``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | VSOut       | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | VSOut       | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPIn      | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | HSCPIn      | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSCPOut     | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | HSCPOut     | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSCPIn      | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | DSCPIn      | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_CullDistance           | SV_CullDistance           | DSOut       | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+| WA_CullDistance           | SV_CullDistance           | DSOut       | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSVIn       | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | GSVIn       | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | GSOut       | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | PSIn        | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | MSOut       | ``CullDistance``                       | N/A                   | ``CullDistance``            |
+|                           |                           | MSOut       | ``gl_CullDistance``                    | N/A                   | ``CullDistance``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_VertexID               | SV_VertexID               | VSIn        | ``VertexIndex``                        | N/A                   | ``Shader``                  |
+| WA_VertexID               | SV_VertexID               | VSIn        | ``gl_VertexIndex``                     | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_InstanceID             | SV_InstanceID             | VSIn        | ``InstanceIndex`` or                   | N/A                   | ``Shader``                  |
-|                           |                           |             | ``InstanceIndex - BaseInstance``       |                       |                             |
+| WA_InstanceID             | SV_InstanceID             | VSIn        | ``gl_InstanceIndex`` or                | N/A                   | ``Shader``                  |
+|                           |                           |             | ``gl_InstanceIndex - gl_BaseInstance`` |                       |                             |
 |                           |                           |             | with                                   |                       |                             |
 |                           |                           |             | ``-fvk-support-nonzero-base-instance`` |                       |                             |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_Depth                  | SV_Depth                  | PSOut       | ``FragDepth``                          | N/A                   | ``Shader``                  |
+| WA_Depth                  | SV_Depth                  | PSOut       | ``gl_FragDepth``                       | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_DepthGreaterEqual      | SV_DepthGreaterEqual      | PSOut       | ``FragDepth``                          | ``DepthGreater``      | ``Shader``                  |
+| WA_DepthGreaterEqual      | SV_DepthGreaterEqual      | PSOut       | ``gl_FragDepth``                       | ``DepthGreater``      | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_DepthLessEqual         | SV_DepthLessEqual         | PSOut       | ``FragDepth``                          | ``DepthLess``         | ``Shader``                  |
+| WA_DepthLessEqual         | SV_DepthLessEqual         | PSOut       | ``gl_FragDepth``                       | ``DepthLess``         | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_IsFrontFace            | SV_IsFrontFace            | PSIn        | ``FrontFacing``                        | N/A                   | ``Shader``                  |
+| WA_IsFrontFace            | SV_IsFrontFace            | PSIn        | ``gl_FrontFacing``                     | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | CSIn        | ``GlobalInvocationId``                 | N/A                   | ``Shader``                  |
+|                           |                           | CSIn        | ``gl_GlobalInvocationId``              | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_DispatchThreadID       | SV_DispatchThreadID       | MSIn        | ``GlobalInvocationId``                 | N/A                   | ``Shader``                  |
+| WA_DispatchThreadID       | SV_DispatchThreadID       | MSIn        | ``gl_GlobalInvocationId``              | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | ASIn        | ``GlobalInvocationId``                 | N/A                   | ``Shader``                  |
+|                           |                           | ASIn        | ``gl_GlobalInvocationId``              | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | CSIn        | ``WorkgroupId``                        | N/A                   | ``Shader``                  |
+|                           |                           | CSIn        | ``gl_WorkgroupId``                     | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_GroupID                | SV_GroupID                | MSIn        | ``WorkgroupId``                        | N/A                   | ``Shader``                  |
+| WA_GroupID                | SV_GroupID                | MSIn        | ``gl_WorkgroupId``                     | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | ASIn        | ``WorkgroupId``                        | N/A                   | ``Shader``                  |
+|                           |                           | ASIn        | ``gl_WorkgroupId``                     | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | CSIn        | ``LocalInvocationId``                  | N/A                   | ``Shader``                  |
+|                           |                           | CSIn        | ``gl_LocalInvocationId``               | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_GroupThreadID          | SV_GroupThreadID          | MSIn        | ``LocalInvocationId``                  | N/A                   | ``Shader``                  |
+| WA_GroupThreadID          | SV_GroupThreadID          | MSIn        | ``gl_LocalInvocationId``               | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | ASIn        | ``LocalInvocationId``                  | N/A                   | ``Shader``                  |
+|                           |                           | ASIn        | ``gl_LocalInvocationId``               | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | CSIn        | ``LocalInvocationIndex``               | N/A                   | ``Shader``                  |
+|                           |                           | CSIn        | ``gl_LocalInvocationIndex``            | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_GroupIndex             | SV_GroupIndex             | MSIn        | ``LocalInvocationIndex``               | N/A                   | ``Shader``                  |
+| WA_GroupIndex             | SV_GroupIndex             | MSIn        | ``gl_LocalInvocationIndex``            | N/A                   | ``Shader``                  |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | ASIn        | ``LocalInvocationIndex``               | N/A                   | ``Shader``                  |
+|                           |                           | ASIn        | ``gl_LocalInvocationIndex``            | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           | SV_OutputControlPointID   | HSIn        | ``InvocationId``                       | N/A                   | ``Tessellation``            |
+|                           | SV_OutputControlPointID   | HSIn        | ``gl_InvocationId``                    | N/A                   | ``Tessellation``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           | SV_GSInstanceID           | GSIn        | ``InvocationId``                       | N/A                   | ``Geometry``                |
+|                           | SV_GSInstanceID           | GSIn        | ``gl_InvocationId``                    | N/A                   | ``Geometry``                |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           | SV_DomainLocation         | DSIn        | ``TessCoord``                          | N/A                   | ``Tessellation``            |
+|                           | SV_DomainLocation         | DSIn        | ``gl_TessCoord``                       | N/A                   | ``Tessellation``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSIn        | ``PrimitiveId``                        | N/A                   | ``Tessellation``            |
+|                           |                           | HSIn        | ``gl_PrimitiveId``                     | N/A                   | ``Tessellation``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PCIn        | ``PrimitiveId``                        | N/A                   | ``Tessellation``            |
+|                           |                           | PCIn        | ``gl_PrimitiveId``                     | N/A                   | ``Tessellation``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DsIn        | ``PrimitiveId``                        | N/A                   | ``Tessellation``            |
+|                           |                           | DsIn        | ``gl_PrimitiveId``                     | N/A                   | ``Tessellation``            |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSIn        | ``PrimitiveId``                        | N/A                   | ``Geometry``                |
+|                           |                           | GSIn        | ``gl_PrimitiveId``                     | N/A                   | ``Geometry``                |
 | WA_PrimitiveID            | SV_PrimitiveID            +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``PrimitiveId``                        | N/A                   | ``Geometry``                |
+|                           |                           | GSOut       | ``gl_PrimitiveId``                     | N/A                   | ``Geometry``                |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``PrimitiveId``                        | N/A                   | ``Geometry``                |
+|                           |                           | PSIn        | ``gl_PrimitiveId``                     | N/A                   | ``Geometry``                |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
 |                           |                           |             |                                        |                       | ``MeshShadingNV``           |
-|                           |                           | MSOut       | ``PrimitiveId``                        | N/A                   |                             |
+|                           |                           | MSOut       | ``gl_PrimitiveId``                     | N/A                   |                             |
 |                           |                           |             |                                        |                       | ``MeshShadingEXT``          |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PCOut       | ``TessLevelOuter``                     | N/A                   | ``Tessellation``            |
+|                           |                           | PCOut       | ``gl_TessLevelOuter``                  | N/A                   | ``Tessellation``            |
 | WA_TessLevelOuter         | SV_TessFactor             +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSIn        | ``TessLevelOuter``                     | N/A                   | ``Tessellation``            |
+|                           |                           | DSIn        | ``gl_TessLevelOuter``                  | N/A                   | ``Tessellation``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PCOut       | ``TessLevelInner``                     | N/A                   | ``Tessellation``            |
+|                           |                           | PCOut       | ``gl_TessLevelInner``                  | N/A                   | ``Tessellation``            |
 | WA_TessLevelInner         | SV_InsideTessFactor       +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSIn        | ``TessLevelInner``                     | N/A                   | ``Tessellation``            |
+|                           |                           | DSIn        | ``gl_TessLevelInner``                  | N/A                   | ``Tessellation``            |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_SampleID               | SV_SampleIndex            | PSIn        | ``SampleId``                           | N/A                   | ``SampleRateShading``       |
+| WA_SampleID               | SV_SampleIndex            | PSIn        | ``gl_SampleId``                        | N/A                   | ``SampleRateShading``       |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_StencilRef             | SV_StencilRef             | PSOut       | ``FragStencilRefEXT``                  | N/A                   | ``StencilExportEXT``        |
+| WA_StencilRef             | SV_StencilRef             | PSOut       | ``gl_FragStencilRefEXT``               | N/A                   | ``StencilExportEXT``        |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_PositionBarycentric    | SV_Barycentrics           | PSIn        | ``BaryCoord*AMD``                      | N/A                   | ``Shader``                  |
+| WA_PositionBarycentric    | SV_Barycentrics           | PSIn        | ``gl_BaryCoord*AMD``                   | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``Layer``                              | N/A                   | ``Geometry``                |
+|                           |                           | GSOut       | ``gl_Layer``                           | N/A                   | ``Geometry``                |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``Layer``                              | N/A                   | ``Geometry``                |
+|                           |                           | PSIn        | ``gl_Layer``                           | N/A                   | ``Geometry``                |
 | WA_LayerID                | SV_RenderTargetArrayIndex +-------------+----------------------------------------+-----------------------+-----------------------------+
 |                           |                           |             |                                        |                       | ``MeshShadingNV``           |
-|                           |                           | MSOut       | ``Layer``                              | N/A                   |                             |
+|                           |                           | MSOut       | ``gl_Layer``                           | N/A                   |                             |
 |                           |                           |             |                                        |                       | ``MeshShadingEXT``          |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``ViewportIndex``                      | N/A                   | ``MultiViewport``           |
+|                           |                           | GSOut       | ``gl_ViewportIndex``                   | N/A                   | ``MultiViewport``           |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``ViewportIndex``                      | N/A                   | ``MultiViewport``           |
+|                           |                           | PSIn        | ``gl_ViewportIndex``                   | N/A                   | ``MultiViewport``           |
 | WA_ViewportID             | SV_ViewportArrayIndex     +-------------+----------------------------------------+-----------------------+-----------------------------+
 |                           |                           |             |                                        |                       | ``MeshShadingNV``           |
-|                           |                           | MSOut       | ``ViewportIndex``                      | N/A                   |                             |
+|                           |                           | MSOut       | ``gl_ViewportIndex``                   | N/A                   |                             |
 |                           |                           |             |                                        |                       | ``MeshShadingEXT``          |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``SampleMask``                         | N/A                   | ``Shader``                  |
+|                           |                           | PSIn        | ``gl_SampleMask``                      | N/A                   | ``Shader``                  |
 | WA_SampleMask             | SV_Coverage               +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSOut       | ``SampleMask``                         | N/A                   | ``Shader``                  |
+|                           |                           | PSOut       | ``gl_SampleMask``                      | N/A                   | ``Shader``                  |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_SampleMaskFullyCovered | SV_InnerCoverage          | PSIn        | ``FullyCoveredEXT``                    | N/A                   | ``FragmentFullyCoveredEXT`` |
+| WA_SampleMaskFullyCovered | SV_InnerCoverage          | PSIn        | ``gl_FullyCoveredEXT``                 | N/A                   | ``FragmentFullyCoveredEXT`` |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | VSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | VSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | HSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | HSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | DSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | DSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 | WA_ViewID                 | SV_ViewID                 +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | GSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | PSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | MSIn        | ``ViewIndex``                          | N/A                   | ``MultiView``               |
+|                           |                           | MSIn        | ``gl_ViewIndex``                       | N/A                   | ``MultiView``               |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | VSOut       | ``PrimitiveShadingRateKHR``            | N/A                   | ``FragmentShadingRate``     |
+|                           |                           | VSOut       | ``gl_PrimitiveShadingRateKHR``         | N/A                   | ``FragmentShadingRate``     |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | GSOut       | ``PrimitiveShadingRateKHR``            | N/A                   | ``FragmentShadingRate``     |
+|                           |                           | GSOut       | ``gl_PrimitiveShadingRateKHR``         | N/A                   | ``FragmentShadingRate``     |
 | WA_ShadingRate            | SV_ShadingRate            +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | PSIn        | ``ShadingRateKHR``                     | N/A                   | ``FragmentShadingRate``     |
+|                           |                           | PSIn        | ``gl_ShadingRateKHR``                  | N/A                   | ``FragmentShadingRate``     |
 |                           |                           +-------------+----------------------------------------+-----------------------+-----------------------------+
-|                           |                           | MSOut       | ``PrimitiveShadingRateKHR``            | N/A                   | ``FragmentShadingRate``     |
+|                           |                           | MSOut       | ``gl_PrimitiveShadingRateKHR``         | N/A                   | ``FragmentShadingRate``     |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
-| WA_CullPrimitive          | SV_CullPrimitive          | MSOut       | ``CullPrimitiveEXT``                   | N/A                   | ``MeshShadingEXT ``         |
+| WA_CullPrimitive          | SV_CullPrimitive          | MSOut       | ``gl_CullPrimitiveEXT``                | N/A                   | ``MeshShadingEXT ``         |
 +---------------------------+---------------------------+-------------+----------------------------------------+-----------------------+-----------------------------+
 
 
