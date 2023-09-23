@@ -343,6 +343,10 @@ Unary Operators 	!, -, +
 +-------------+-----------------+-------------+
 |  countbits  |     bitCount    |  countbits  |
 +-------------+-----------------+-------------+
+| countl_zero |     findMSB     | firstbithigh|
++-------------+-----------------+-------------+
+| countr_zero |     findLSB     | firstbitlow |
++-------------+-----------------+-------------+
 |    cross    |      cross      |    cross    |
 +-------------+-----------------+-------------+
 |    ddx      |      dFdx       |    ddx      |
